@@ -6,16 +6,16 @@ const input = readline.question("Introduce una palabra: ");
 function invertirTexto(texto) {
   const pila = [];
 
-  // bucle para apilar cada letra de la palabra
+  // Primer bucle para apilar
   for (let letra of texto) {
     pila.push(letra);
-    console.log(pila); //después de apilar
+    console.log(pila); //después de apilar mostramos por pantalla
   }
-  //siguiente parte para desapilar
+  //Ahora desapilamos
   let textoInvertido = "";
   for (let i = pila.length; i > 0; i--) {
     textoInvertido += pila.pop();
-    console.log(pila); //después de desapilar
+    console.log(pila); //después de desapilar mostramos por pantalla
   }
 
   return textoInvertido;

@@ -9,7 +9,7 @@ const input = readlineSync.question("Introduce una serie de parentesis: ");
 function ParentesisBalanceados(serie) {
   const mapa = new Map([["(", ")"]]);
 
-  let pila = [];
+  let pila = []; //usamos una pila para comprobar si están balanceados
 
   for (let caracter of serie) {
     if (mapa.has(caracter)) {

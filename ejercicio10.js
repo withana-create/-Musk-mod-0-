@@ -22,7 +22,7 @@ function esSecuenciaValida(serie) {
     } else {
       const ultimoCaracter = pila.pop();
       if (caracter !== mapa.get(ultimoCaracter)) {
-        return false;
+        return false; //comprobamos si el caracter actual es igual al valor del caracter que eliminamos
       }
     }
   }

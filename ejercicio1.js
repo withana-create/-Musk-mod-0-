@@ -27,6 +27,7 @@ const input = readlineSync.question("Introduce un texto : ");
 const repetidas = palabrasRepetidas(input);
 
 if (repetidas.length > 0) {
+  //ésto indica que hay palabras repetidas
   console.log("Las palabras repetidas son :" + repetidas);
 } else {
   console.log("no hay palabras repetidas");

@@ -9,14 +9,16 @@ function palabrasRepetidas(texto) {
   const mapa = new Map();
   for (palabra of textoOk) {
     if (mapa.has(palabra)) {
+      //si mapa ya tiene la palabra le sumamos 1.
       mapa.set(palabra, mapa.get(palabra) + 1);
     } else {
-      mapa.set(palabra, 1);
+      mapa.set(palabra, 1); //si mapa no tiene la palabra y aparece por 1ªvez ,le añadimos1.
     }
   }
   let repetidas = [];
   for (let [palabra, valor] of mapa) {
     if (valor > 1) {
+      //las que tengan un valor mayor que 1 indica que están repetidas.
       repetidas.push(palabra);
     }
   }

@@ -19,6 +19,7 @@ function diferenciaArrays(array1, array2) {
   let diferencia = [];
   for (let [caracter, valor] of mapa) {
     if (valor === 1) {
+      //así me devuelve los que están sólo una vez y no los repetidos
       diferencia.push(caracter);
     }
   }

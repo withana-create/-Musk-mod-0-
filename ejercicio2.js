@@ -6,7 +6,7 @@
 
 function diferenciaArrays(array1, array2) {
   return array1.filter((numero) => !array2.includes(numero));
-}
+} //con filter puedo filtrar directamente los nº que no están en el array2.
 
 const array1 = [1, 2, 3, 4, 5];
 const array2 = [3, 5];
